@@ -6,7 +6,7 @@ function ContactCard({ contact, contacts, setContacts }) {
     if(confirmed) {
       try {
         // Delete from backend which deletes from Firebase
-        const response = await fetch(`http://localhost:5000/contacts/${contact.id}`, {
+        const response = await fetch(`https://safeher-backend-h5mm.onrender.com/contacts/${contact.id}`, {
           method: 'DELETE'
         })
 

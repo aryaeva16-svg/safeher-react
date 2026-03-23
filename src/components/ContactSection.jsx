@@ -12,7 +12,7 @@ function ContactSection() {
 
   async function fetchContacts() {
     try {
-      const response = await fetch('http://localhost:5000/contacts')
+      const response = await fetch('https://safeher-backend-h5mm.onrender.com/contacts')
       const data = await response.json()
       if(data.success) {
         setContacts(data.contacts)

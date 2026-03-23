@@ -27,7 +27,7 @@ function ContactForm({ contacts, setContacts }) {
       setLoading(true)
       console.log('Sending to backend...')
 
-      const response = await fetch('http://localhost:5000/contacts', {
+      const response = await fetch('https://safeher-backend-h5mm.onrender.com/contacts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
